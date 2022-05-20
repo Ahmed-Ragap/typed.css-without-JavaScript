@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    overflow-x: hidden;
+}
+h1{
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin: 20px 0 0 20px;
+    z-index: 2;  
+    user-select: none;
+}
+h1::after{
+    
+    position: absolute;
+    content:"";
+   background-color:yellow;
+    word-spacing: 2px;
+    /* margin-left: px; */
+    padding: 0  0 0 5px ;
+    animation:change 3s infinite ;
+    -webkit-animation:change 3s infinite ;
+}
+span{
+    position:absolute ;
+    user-select: none;
+    top: 50%;
+    left: 25%; 
+    margin: 0;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+   z-index: -1;
+    display: block;
+    opacity: .5;
+    color: #ddd;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transform: rotate(-45deg); 
+}
+mark{
+    padding: 1px 0 1px 20px;
+}
+
+@keyframes change {
+    5%{
+        content:" e | ";
+    }
+    10%{
+        content:" en |";
+    }
+    15%{
+        content:" end |";
+       
+    }
+    20%{
+        content:" end d |";
+    }
+    25%{
+        content:" end de |";
+    }
+    30%{
+        content:" end dev |";
+    }
+    35%{
+        content:" end deve |";
+    }
+    40%{
+        content:" end devel |";
+    }
+    45%{
+        content:" end develo |";
+    }
+    50%{
+        content:" end develop |";
+    }
+    55%{
+        content:" end develope |";
+    }
+    60%{
+        content:" end developer |";
+    }
+    65%{
+        content:" end developer . | ";
+    }
+    70%{
+        content:" end developer .. |";
+        
+    }
+    75%{
+        content:" end developer ... |";
+       
+    }
+    80%{
+        content:" end developer .. | ";
+    }
+
+    85%{
+        content:" end developer ..... | ";
+    }
+    90%{
+        content:" end developer .... | ";
+    }
+    95%{
+        content:" end developer ....... | ";
+    }
+   
+} 
+
+@media(min-width:768px){
+        h1{
+                font-size: 4rem;
+    }
+
+    span{
+        font-size: 3rem !important;
+    }
+}
